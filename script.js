@@ -91,13 +91,13 @@ function drawText() {
 
     if(frameNumber < 250){
         context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
-        context.fillText("Anh chúc em có cái tết thật là hạnh phúc và mùa valentine thật là vui vẻ ở Đà Lạt", canvas.width/2, canvas.height/2);
+        context.fillText("Chúc em tết hạnh phúc và valentine thật là vui vẻ", canvas.width/2, canvas.height/2);
         opacity = opacity + 0.01;
     }
     //fades out the text by decreasing the opacity
     if(frameNumber >= 250 && frameNumber < 500){
         context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
-        context.fillText("I love you!", canvas.width/2, canvas.height/2);
+        context.fillText("Chúc em tết hạnh phúc và valentine thật là vui vẻ", canvas.width/2, canvas.height/2);
         opacity = opacity - 0.01;
     }
 
@@ -109,9 +109,9 @@ function drawText() {
         context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
 
         if (window.innerWidth < 600) {           //shortens long sentence for mobile screens
-            drawTextWithLineBreaks(["Sau khi về SG anh dẫn em đi chơi đi ăn, đi xem phim bù nhé"], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
+            drawTextWithLineBreaks(["Sau khi về SG anh dẫn em đi chơi,", " đi ăn, đi xem phim bù nhé"], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
         } else {
-            context.fillText("Sau khi về SG anh dẫn em đi chơi đi ăn, đi xem phim bù nhé", canvas.width/2, canvas.height/2);
+            context.fillText("Sau khi về SG anh dẫn em đi chơi, đi ăn, đi xem phim bù nhé", canvas.width/2, canvas.height/2);
         }
 
         opacity = opacity + 0.01;
@@ -133,12 +133,12 @@ function drawText() {
     }
     if(frameNumber > 1000 && frameNumber < 1250){
         context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
-        context.fillText("Chúc em mỗi ngày đều may mắn và tràn đầy sức khỏe như hột mítttt", canvas.width/2, canvas.height/2);
+        context.fillText("Chúc em mỗi ngày đều may mắn, tràn đầy sức khỏe như hột mítttt", canvas.width/2, canvas.height/2);
         opacity = opacity + 0.01;
     }
     if(frameNumber >= 1250 && frameNumber < 1500){
         context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
-        context.fillText("Chúc em mỗi ngày đều may mắn và tràn đầy sức khỏe như hột mítttt", canvas.width/2, canvas.height/2);
+        context.fillText("Chúc em mỗi ngày đều may mắn, tràn đầy sức khỏe như hột mítttt", canvas.width/2, canvas.height/2);
         opacity = opacity - 0.01;
     }
 
